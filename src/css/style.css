@@ -1,0 +1,36 @@
+main {
+    height: 100vh;
+    width: 100%;
+    font-family: "Roboto", sans-serif; 
+    background: url('../image/fundo.jpg') repeat;
+    background-size: contain;
+    padding: 1.2rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-campo-texto{
+    color: #FFF;
+    & h1{
+        font-weight: 900;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding-bottom: 11px;
+    }
+
+    & p{
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+}
+
+.container-formulario{
+    background-color: #FFF;
+    padding: 2rem;
+    display: flex;
+}
+
+/* .container-formulario form input[name="nome"]{
+    font-family: "Roboto", sans-serif; 
+} */
