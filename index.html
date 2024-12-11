@@ -21,19 +21,16 @@
         </div>
 
         <div class="container-formulario">
-            <form action="index.html" method="get">
-                <input placeholder="Nome completo *" type="text" name="nome">
-                <input placeholder="Email *" type="text" name="email">
-                <input placeholder="Telefone *" type="number" name="telefone">
-                <textarea placeholder="Mensagem *" type="text" name="mensagem" wrap="soft"></textarea>
-                    <!-- ATRIBUTO PARA DESATIVAR O REDIMENSIONAMENTO textarea {resize: none;} -->
-                <span>*campos obrigatórios</span>
-                <input type="submit">Enviar</input>
-
+            <form action="index.html" method="get" class="formulario">
+                <input placeholder="Nome completo *" type="text" name="nome" class="input-nome">
+                <input placeholder="Email *" type="text" name="email" class="input-email">
+                <input placeholder="Telefone *" type="tel" name="telefone" class="input-telefone">
+                <textarea placeholder="Mensagem *" type="text" name="mensagem" wrap="soft" class="input-mensagem"></textarea>
+                <span class="aviso-de-campos-obrigatorios">*campos obrigatórios</span>
+                <input type="submit" class="input-submit">
             </form>
         </div>
     </main>
-
     <script src="validandoFormulario.js"></script>
 </body>
 </html>

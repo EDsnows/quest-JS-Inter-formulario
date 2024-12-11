@@ -28,9 +28,18 @@ main {
 .container-formulario{
     background-color: #FFF;
     padding: 2rem;
-    display: flex;
+    height: 100%;
 }
 
-/* .container-formulario form input[name="nome"]{
-    font-family: "Roboto", sans-serif; 
-} */
+.container-formulario .formulario input[type=text], input[type=text], input[type=tel], textarea[type=text], input[type=submit], .aviso-de-campos-obrigatorios{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    resize: none;
+}
+
+.container-formulario .formulario .input-nome, .input-email, .input-telefone, .input-mensagem, .input-submit{
+    margin: 0 7px;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 15px;
+}
