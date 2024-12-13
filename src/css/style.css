@@ -8,6 +8,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 6rem;
 }
 
 .container-campo-texto{
@@ -31,9 +32,17 @@ main {
     height: 100%;
 }
 
-.container-formulario .formulario input[type=text], input[type=text], input[type=tel], textarea[type=text], input[type=submit], .aviso-de-campos-obrigatorios{
+.container-formulario .formulario{
+    height: 100%;
+}
+
+.container-formulario .formulario .container-do-input{
+    width: 43vw;
+}
+
+.container-formulario .formulario .container-do-input input[type=text], input[type=tel], textarea[type=text], input[type=submit], .aviso-de-campos-obrigatorios{
     font-family: "Roboto", sans-serif;
-    width: 100%;
+    width: calc(100% - 7px);
     resize: none;
 }
 
@@ -42,4 +51,65 @@ main {
     padding: 8px;
     font-weight: 700;
     font-size: 15px;
+}
+
+.container-formulario .formulario .input-nome{
+    border-radius: 5px;
+    border: solid #000 1px;
+}
+
+.container-formulario .formulario .input-email{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid #000 1px;
+}
+
+.container-formulario .formulario .input-telefone{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid #000 1px;
+}
+
+.container-formulario .formulario .container-do-input:last-of-type{
+    height: 50%;
+}
+
+.container-formulario .formulario .input-mensagem{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid #000 1px;
+    height: 100%;
+}
+
+.container-formulario .formulario .aviso-de-campos-obrigatorios{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 4rem;
+}
+
+.container-formulario .formulario .input-submit{
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(60, 204, 135, 1);
+    color: #FFF;
+    height: 41px
+}
+
+.formulario input[type=text].campo-vazio,
+.formulario input[type=tel].campo-vazio,
+.formulario textarea[type=text].campo-vazio{
+    border: solid rgba(245, 46, 46, 1) 1px;
+}
+
+.container-do-input{  
+    position: relative;
+}
+
+.aviso-do-campo-vazio::after{
+    content: "campo obrigatório";
+    color: rgba(245, 46, 46, 1);
+    position: absolute;
+    padding-left: 15px;
 }
