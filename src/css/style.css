@@ -107,7 +107,7 @@ main {
     position: relative;
 }
 
-.aviso-do-campo-vazio::after{
+.aviso-de-campo-vazio::after{
     content: "campo obrigatório";
     color: rgba(245, 46, 46, 1);
     position: absolute;
